@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Xác suất thống kê-Bài 1: Biến cố ngẫu nhiên.
+title: Xác suất thống kê Bài 1: Biến cố ngẫu nhiên.
 date: 2021-01-19 15:22:15 +0700
 summary: Mô tả các khái niệm tổng quát và ôn tập tổ hợp.
 categories: math
