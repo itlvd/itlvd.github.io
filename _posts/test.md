@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Kiểm tra số nguyên tố C++
-date: 2020-08-30 12:32:15 +0700
+date: 2021-01-19 15:22:15 +0700
 summary: Số nguyên tố được sử dụng khá nhiều trong Toán học và Tin học bởi sự đặc biệt của nó. Vậy đâu là cách tìm số nguyên tố trong lập trình?
 categories: math
 ---
