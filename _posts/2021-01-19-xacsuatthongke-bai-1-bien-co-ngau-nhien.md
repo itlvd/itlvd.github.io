@@ -9,9 +9,9 @@ categories: math
 # Giới thiệu
 
 ## Mục đích của nghiên cứu lý thuyết xác suất
-Nghiên cứu các hiện tượng ngẫu nhiên xảy ra trong cùng một điều kiện xác định, ngược lại là hiện tượng tất định xảy ra trong cùng một điều kiện xác định. Nói một cách đơn giản, mục đích nghiên cứu các hiện tượng ngẫu nhiên trong cùng một điều kiện thì lại cho ra các kết quả khác nhau.
+Nghiên cứu các hiện tượng ngẫu nhiên xảy ra trong cùng một điều kiện xác định cho kết quả khác nhau, ngược lại là hiện tượng tất định xảy ra trong cùng một điều kiện xác định cho kết quả giống nhau. Nói một cách đơn giản, mục đích nghiên cứu các hiện tượng ngẫu nhiên trong cùng một điều kiện thì lại cho ra các kết quả khác nhau.
 
-Ví dụ: một viên xúc xắc đồng chất được gieo đúng hai lần ở cùng một vị trí. Nhưng kết quả của ba lần gieo là khác nhau.
+Ví dụ: một viên xúc xắc đồng chất được gieo đúng ba lần ở cùng một vị trí. Nhưng kết quả của ba lần gieo là khác nhau.
 
 ## Lược sử
 Xác suất bắt nguồn từ các trò chơi đỏ đen may rủi, các nhà toán học bắt đầu nghiên cứu về xác suất. Tuy nhiên, thời điểm đó, xác suất vẫn chưa phải là một môn khoa học. Mãi cho đến khi nhà toán học người Nga Andrey Nikolaevich Kolmogorov áp dụng lý thuyết tổ hợp và vi tích phân thì xác suất mới trở thành môn khoa học để nghiên cứu.
