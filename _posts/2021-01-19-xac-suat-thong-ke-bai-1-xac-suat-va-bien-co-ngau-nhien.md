@@ -5,6 +5,7 @@ date: 2021-01-19 15:22:15 +0700
 summary: Mô tả các khái niệm tổng quát và ôn tập tổ hợp.
 categories: math
 ---
+
 # Giới thiệu
 
 ## Mục đích của nghiên cứu lý thuyết xác suất
