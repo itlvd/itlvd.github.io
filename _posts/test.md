@@ -1,72 +1,65 @@
 ---
 layout: post
-title: Xác suất thống kê-Bài 1 Biến cố ngẫu nhiên.
+title: [Xác suất thống kê] Bài 1 Biến cố ngẫu nhiên.
 date: 2021-01-19 15:22:15 +0700
 summary: Mô tả các khái niệm tổng quát và ôn tập tổ hợp.
 categories: math
 ---
 
-Số nguyên tố được sử dụng khá nhiều trong Toán học và Tin học bởi sự đặc biệt của nó. Vậy đâu là cách tìm số nguyên tố trong lập trình?
+Bài viết Mô tả các khái niệm tổng quát và ôn tập tổ hợp.
 
-## Định nghĩa
+# Giới thiệu
 
-Số nguyên tố là số có đúng hai ước số là 1 và chính nó. Tức là ngoài số 1 và chính nó, nó sẽ không chia hết cho bất kì số nào nữa. Ví dụ số 5 hay số 43 là số nguyên tố, bởi vì:
+## Mục đích của nghiên cứu lý thuyết xác suất
+Nghiên cứu các hiện tượng ngẫu nhiên xảy ra trong cùng một điều kiện xác định, ngược lại là hiện tượng tất định xảy ra trong cùng một điều kiện xác định. Nói một cách đơn giản, mục đích nghiên cứu các hiện tượng ngẫu nhiên trong cùng một điều kiện thì lại cho ra các kết quả khác nhau.
 
-- 5 chỉ chia hết cho 1 và 5.
-- 43 chỉ chia hết cho 1 và 43.
+Ví dụ: một viên xúc xắc đồng chất được gieo đúng hai lần ở cùng một vị trí. Nhưng kết quả của ba lần gieo là khác nhau.
 
-## Kiểm tra số nguyên tố theo định nghĩa
+## Lược sử
+Xác suất bắt nguồn từ các trò chơi đỏ đen may rủi, các nhà toán học bắt đầu nghiên cứu về xác suất. Tuy nhiên, thời điểm đó, xác suất vẫn chưa phải là một môn khoa học. Mãi cho đến khi nhà toán học người Nga Andrey Nikolaevich Kolmogorov áp dụng lý thuyết tổ hợp và vi tích phân thì xác suất mới trở thành môn khoa học để nghiên cứu.
 
-Đây là cách đơn giản và dễ dàng cài đặt nhất. Giả sử bạn cần kiểm tra xem n có phải là số nguyên tố hay không? Bạn chỉ cần kiểm tra xem n có chia hết cho bất kì số nào trong khoảng từ 1 đến n ( khoảng là không lấy hai đầu mút ).
+# Phép thử và biến cố
+Khi quan sát một hiện tượng có xảy ra hay không? Ta quan sát xảy ra nhiều lần, và mỗi lần được gọi là phép thử ($$ \tau $$). 
 
-Ví dụ: n = 7, thì bạn cần xét lần lượt, 7/2, 7/3, 7/4, 7/5, 7/6.
+Việc có xảy ra hay không trong kết quả của một phép thử được gọi là “biến cố ngẫu nhiên”.
 
-Bạn có thấy cách trên xét rất nhiều không? Có cách để xét ít hơn, và tôi đoán đa số mọi người sử dụng. Thay vì bạn xét từ $$ 2 \to n -1  $$ thì bạn chị cần xét từ $$ 2 \to \sqrt{n} $$.
+Tập hợp tất cả các khả năng có thể xảy ra được gọi là không gian mẫu (outcome) $$ \Omega $$. Giả sử, khi tung xúc xắc, tất cả các trường hợp xảy ra là 1, 2, 3, 4, 5, 6. Vậy không gian mẫu là:
+$$ \Omega = \left \{ 1, 2, 3, 4, 5, 6 \right \} $$ .
 
-## Chứng minh
+Các phần tử của không gian mẫu được gọi là biến cố sơ cấp (elementary event) $$ \omega $$. Giả sử, khi tung xúc xắc, biến cố sơ cấp là 1, hoặc biến cố sơ cấp là 2,…
 
-Giả sử n không là số nguyên tố thì ta luôn tách ra được:
+Tập con của không gian mẫu là biến cố $$ A $$ (event) hay là biến cố ngẫu nhiên. Lấy ví dụ ở trên, khi tung xúc xắc, môt biến cố là $$ \left \{ 1, 2 \right \},\left \{ 6, 2, 5 \right \},... $$
 
-$$ n = k_{1} . k_{2} $$ và $$ 0 < k_{1} \le k_{2} < n. $$
+# Loại biến cố
+Một tập hợp $$ \Omega $$ sẽ có ít nhất có hai tập hợp con bao gồm $$ \varnothing $$ và tập chính nó $$ \Omega $$.
 
-$$ k_{1}.k_{2} \le n $$
-$$ \Rightarrow k_{1}^{2} \le n $$
-$$ \Leftrightarrow k_{1} \le \sqrt{n} $$
-Vậy bạn có thể hiểu đơn giản là $$ k_{1} $$​ lớn nhất cũng chỉ là $$ \sqrt{n} $$ , mà nếu bạn có $$ k_{1}​ $$ thì chắc chắn là số đó không phải là số nguyên tố. Vậy bạn chỉ cần xét giá trị $$ 2 \to \sqrt{n} $$​.
+Biến cố là tập hợp con của không gian mẫu. Vì thế, một biến cố sẽ có chắc chắn hai loại biến cố:
++ Biến cố chắc chắn: kí hiệu là $$ \Omega $$, đây là biến cố nhất định xảy ra. Ví dụ, biến cố xuất hiện khi gieo xúc xắc nhỏ hơn 7. Đây là điều chắc chắn, vì bạn chỉ có thể gieo ra số nút từ 1 đến 6.
++ Biến cố không thể: kí hiệu là $$ \varnothing $$, đây là biến cố nhất định không xảy ra. Ví dụ, biến cố xuất hiện khi gieo xúc xắc bằng 7. Vì không bạn không thể gieo xúc xắc ra kết quả là 7 nút được. Hoặc biến cố tung đồng xu sao cho mặt sấp và mặt ngửa cùng xuất hiện, đây là điều không thể.
 
-Vậy để cải tiến, bạn cần có những nhận xét sau:
+# Mối liên hệ giữa các biến cố
 
-Số nguyên tố là số lẻ, vì nếu số chẵn thì $$ k_{1} = 2 $$ vậy chắc chắn không phải là số nguyên tố. Vậy bạn có thể sử dụng bước nhảy là 2 để xét.
+## Sự kéo theo
+A kéo theo B, tức là A là con của B, kí hiệu $$ A \subset B $$, nếu A xảy ra thì B xảy ra, nhưng B xảy ra chưa chắc A xảy ra.
+Ví dụ: Khi tung xúc xắc, Biến cố A là tập hợp tất cả các nút chia hết cho 4. Biến cố B là tập hợp tất cả các nút chia hết cho 2. Vậy bạn có thể thấy các số chia hết cho 4 thì kéo theo các số đó cũng chia hết cho 2, nhưng các số chia hết cho 2 thì không chắc sẽ chia hết cho 4, như 6 chia hết cho 2 nhưng không chia hết cho 4.
 
-```cpp
-#include<iostream>
-#include<cmath>
+## Sự tương đương
+A tương đương với B, kí hiệu là $$ A = B $$, nếu A xảy ra thì B xảy ra và ngược lại.
+Ví dụ: khi tung xúc xắc, biến cố A là tập hợp tất cả các nút bằng 1. Biến cố B là tập hợp tất cả các nút nhỏ hơn 2. Vậy bạn chỉ có thể gieo ra 1 nút mới thoả.
 
-using namespace std;
+## Biến cố tổng
+Là tổng của A và B, kí hiệu A + B hoặc $$ A \cup  B $$ hay còn gọi là hợp. Là biến cố xảy ra nếu có ít nhất một trong hai biến cố xảy ra.
 
-/*Thuật toán:
-+ Số 1 không phải là số nguyên tố.
-+ Số 2 là số chẵn duy nhất là số nguyên tố.
-+ Số nguyên tố đều là số lẻ => số chia cũng phải là số lẻ. Vì số lẻ không thể chia hết cho số chẵn được.
-*/
+## Biến cố tích
+Là tích của A và B, kí hiệu AB hoặc $$ A \cap B $$ hay còn gọi là giao. Là biến cố xảy ra nếu A và B đồng thời xảy ra. 
 
-//Hàm kiểm tra số Nguyên tố.
-bool isPrime(int n){
-  if(n == 2) return true;
-  else if(n == 1 || n % 2 == 0) return false;
-  else{
-    for(int i = 3; i <= sqrt(n); i+=2){
-      if(n % i == 0) return false;
-    }
-  }
-  return true;
-}
- 
-int main(){
-  int n = 25;
-  cout << isPrime(n);
-  return 0;
-}
-```
-## Tham khảo:
-*Tài liệu chuyên Tin học Quyển 1 -- Hồ Sĩ Đàm.*
+## Biến cố đối lập
+là biến cố mà biến cố $$A$$ đang xét sẽ không xảy ra, kí hiệu $$ \bar{A}$$ 
+
+## Biến cố hiệu 
+Biến cố hiệu của A và B là biến cố A xảy ra nhưng biến cố B không xảy ra, kí hiệu $$A \setminus B$$. Ta có công thức hay sử dụng: $$ A \setminus B = A.\bar{B} $$.
+
+## Biến cố xung khắc
+Là biến cố khi A và B nếu xung khắc nhau, thì A không bao giờ xảy ra đồng thời với B. Định nghĩa toán học: $$ A\cap B = A.B = \varnothing $$. Hay nói một cách dễ hiểu là không bao giờ xảy ra.
+Ví dụ: gọi A là biến cố của "các số chia hết cho 2 và lớn hơn 1 nhỏ hơn 7", gọi B là biến cố của "các số không chia hết cho 2 lớn hơn 2 và nhỏ hơn 6".
+Vậy $$ A = \left \{ 2, 4, 6  \right \} $$ và $$ B = \left \{ 3, 5 \right \} $$
