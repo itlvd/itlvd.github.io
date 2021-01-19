@@ -6,8 +6,6 @@ summary: Mô tả các khái niệm tổng quát và ôn tập tổ hợp.
 categories: math
 ---
 
-Bài viết Mô tả các khái niệm tổng quát và ôn tập tổ hợp.
-
 # Giới thiệu
 
 ## Mục đích của nghiên cứu lý thuyết xác suất
