@@ -33,7 +33,7 @@ __Ví dụ khác__: Có một bạn gái gửi cho mình bức thư tình, nhưn
 
 Tương tự như hoán vị nhưng thay vì lấy hết $$n$$ phần tử, thì ta chỉ lấy $$k$$ phần tử. Tức là mỗi bộ sẽ có $$k$$ phần tử, các bộ đó có tính thứ tự và phải khác nhau.
 
-<span class="red">Công thức:</span> $$ A_{n}^{k} = \frac{n!}{(n-k)!}$$
+$$ A_{n}^{k} = \frac{n!}{(n-k)!}$$
 
 __Ví dụ__: Lớp học có 40 bạn học sinh. Mình cần chọn 3 bạn làm lớp trưởng, lớp phó học tập, lớp phó kỷ luật. Vậy số cách chọn 3 bạn trong 40 bạn là $$ A_{40}^{3} = \frac{40!}{(40-3)!} = 59280$$. Thế là mình gọi 3 bạn: "Dũng, Minh, Khôi". Thì:
 + <span class="green">Dũng</span> làm lớp trưởng, <span class="red">Minh</span> làm lớp phó học tập, <span class="yellow">Khôi</span> là lớp phó kỷ luật.
@@ -54,7 +54,7 @@ Nên số cách chọn 3 bạn trong 40 bạn đảm nhận 3 vị trí lớp tr
 
  $$ A_{n}^{k} = \frac{n!}{(n-k)!}$$
 
-__Ví dụ__ mình cần chọn 3 bạn trong 5 bạn học sinh. Thì $$ A_{5}^{3} = \frac{5!}{(5-3)!} = 60$$.
+__Ví dụ__ mình cần chọn 3 bạn trong 5 bạn học sinh khác nhau để phân công ban cán sự. Thì $$ A_{5}^{3} = \frac{5!}{(5-3)!} = 60$$.
 
 Cách làm khi mới học tổ hợp: $$5.4.3 = 60$$
 
@@ -104,7 +104,8 @@ __Ví dụ__: Lớp học có 40 bạn học sinh. Mình cần chọn 3 bạn sa
 
 > Với 3 cách trên thì nó là như nhau, nói bạn nào cũng như nhau. Vậy chỉ có 1 cách thôi.
 
-<span class="red">Giải thích công thức</span>: $$ C_{n}^{k} = \frac{n!}{k!.(n-k)!}$$
+## Giải thích công thức
+$$ C_{n}^{k} = \frac{n!}{k!.(n-k)!}$$
 
 Như đã nêu phía trên, tổ hợp là chỉnh hợp nhưng không tính vị trí. Nên nếu không tính vị trí thì...ta chia cho hoán vị của chúng là xong.
 
@@ -120,7 +121,7 @@ Bạn có thể tính chỉnh hợp chập k của n. Nhưng với k nhỏ nhỏ
 
 Cách tính rất đơn giản: 
 $$A_{5}^{3} = \frac{5!}{(5-3)!} = \frac{5.4.3.2.1}{2.1}=5.4.3$$
-bạn có nhận ra với k bằng bao nhiêu thì ta lấy tích của các số từ n cho đến n - k. Để tránh hiểu sai, nên mình ghi hơi khó hiểu.
+bạn có nhận ra với k bằng bao nhiêu thì ta lấy tích của các số từ n cho đến n - k.
 
 __Ví dụ__:
 
