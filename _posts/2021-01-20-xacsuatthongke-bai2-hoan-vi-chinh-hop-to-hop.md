@@ -35,18 +35,18 @@ Tương tự như hoán vị nhưng thay vì lấy hết $$n$$ phần tử, thì
 
 <span class="red">Công thức:</span> $$ A_{n}^{k} = \frac{n!}{(n-k)!}$$
 
-Ví dụ: Lớp học có 40 bạn học sinh. Mình cần chọn 3 bạn làm lớp trưởng, lớp phó học tập, lớp phó kỷ luật. Vậy số cách chọn 3 bạn trong 40 bạn là $$ A_{40}^{3} = \frac{40!}{(40-3)!} = 59280$$. Thế là mình gọi 3 bạn: "Dũng, Minh, Khôi". Thì:
-+ Dũng làm lớp trưởng, Minh làm lớp phó học tập, Khôi là lớp phó kỷ luật.
-+ Minh làm lớp trưởng, Khôi làm lớp phó học tập, Dũng làm lớp phó kỷ luật.
-+ Khôi làm lớp trưởng, Minh làm lớp phó học tập, Dũng làm lớp phó kỷ luật.
+__Ví dụ__: Lớp học có 40 bạn học sinh. Mình cần chọn 3 bạn làm lớp trưởng, lớp phó học tập, lớp phó kỷ luật. Vậy số cách chọn 3 bạn trong 40 bạn là $$ A_{40}^{3} = \frac{40!}{(40-3)!} = 59280$$. Thế là mình gọi 3 bạn: "Dũng, Minh, Khôi". Thì:
++ <span class="green">Dũng</span> làm lớp trưởng, <span class="red">Minh</span> làm lớp phó học tập, <span class="yellow">Khôi</span> là lớp phó kỷ luật.
++ <span class="red">Minh</span> làm lớp trưởng, <span class="yellow">Khôi</span> làm lớp phó học tập, <span class="green">Dũng</span> làm lớp phó kỷ luật.
++ <span class="yellow">Khôi</span> làm lớp trưởng, <span class="red">Minh</span> làm lớp phó học tập, <span class="green">Dũng</span> làm lớp phó kỷ luật.
 + ...
 
-3 cách xếp hoàn toán khác nhau, 3 bạn ấy chỉ cần thay đổi vị trí thì sẽ tạo ra một hoán vị mới.
+> Cách xếp hoàn toán khác nhau, 3 bạn ấy chỉ cần thay đổi vị trí thì sẽ tạo ra một hoán vị mới.
 
 Hay cách làm khi mới học tổ hợp:
 + Số cách chọn bạn thứ nhất làm lớp trưởng là: 40.
 + Số cách chọn bạn thứ hai làm lớp phó học tập là: 39 (vì 1 bạn làm lớp trưởng rồi).
-+ Số cách chọn bạn thứ ba làm lớp phó kỷ luật là: 38 (1 bạn đã làm lớp trưởng, 1 bạn đã làm lớp phó học tập)
++ Số cách chọn bạn thứ ba làm lớp phó kỷ luật là: 38 (1 bạn đã làm lớp trưởng, 1 bạn đã làm lớp phó học tập).
 
 Nên số cách chọn 3 bạn trong 40 bạn đảm nhận 3 vị trí lớp trưởng, lớp phó học tập, lớp phó kỷ luật là: $$40.39.38 = 59280$$
 
