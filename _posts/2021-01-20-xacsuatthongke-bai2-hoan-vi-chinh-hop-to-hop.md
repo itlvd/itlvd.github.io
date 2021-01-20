@@ -12,12 +12,12 @@ Hoán vị n phần tử là một cách sắp xếp thứ tự n phần tử. L
 
 Ví dụ: $$ \Omega = 1,2,3$$
 Tổng số hoán vị là $$3! = 6$$. Bao gồm:
-+ $$ \left \{ 1,2,3 \right \}$$
-+ $$ \left \{ 1,3,2 \right \} $$
-+ $$ \left \{ 2, 1, 3 \right \} $$
-+ $$ \left \{ 2,3,1 \right \}$$
-+ $$ \left \{ 3,1,2 \right \}$$
-+ $$ \left \{ 3,2,1 \right \}$$
++ $$ \left \{ 1,2,3 \right \}$$.
++ $$ \left \{ 1,3,2 \right \} $$.
++ $$ \left \{ 2, 1, 3 \right \} $$.
++ $$ \left \{ 2,3,1 \right \}$$.
++ $$ \left \{ 3,1,2 \right \}$$.
++ $$ \left \{ 3,2,1 \right \}$$.
 
 Hay giải theo cách mà mới học tổ hợp hay giải là:
 + Phần tử đầu tiên có $$3$$ cách chọn.
@@ -25,7 +25,7 @@ Hay giải theo cách mà mới học tổ hợp hay giải là:
 + Phần tử thứ ba có $$1$$ cách chọn.
 Vậy số hoán vị của $$3$$ phần tử là: $$3.2.1 = 6$$
 
-Ví dụ khác: Có một bạn gái gửi cho mình bức thư tình, nhưng không muốn mình biết cô ấy là ai, nên cô ấy cắt chữ: "anh, yêu, em, không" ở trong một tờ báo nào đó và kèm theo địa chỉ nơi gửi và nhận. Nhưng không may, trong quá trình gửi, các chữ cái bị xốc lên xốc xuống nên lộn xộn và mình nhận được thông điệp của cô gái là: "em, không, yêu, anh". Theo phản xạ của mình, mình sẽ gửi lại cho cô ấy thông điệp: "anh, không, yêu, em". Nhưng thế nào trên đường đi vấp ổ voi chữ nó lại lộn xộn và đến tay cô gái là: "không, anh, yêu, em". Mệt mỏi chưa, có 4 chữ, lộn qua lộn lại, yêu hay không yêu nói một lời. Tại thằng shipper đi không né ổ voi nên cuộc tình chúng ta ngang trái.
+Ví dụ khác: Có một bạn gái gửi cho mình bức thư tình, nhưng không muốn mình biết cô ấy là ai. Nên cô ấy cắt chữ: "anh, yêu, em, không" ở trong một tờ báo nào đó và kèm theo địa chỉ nơi gửi và nhận. Nhưng không may, trong quá trình gửi, các chữ cái bị xốc lên xốc xuống nên lộn xộn và mình nhận được thông điệp của cô gái là: "em, không, yêu, anh". Theo phản xạ của mình, mình sẽ gửi lại cho cô ấy thông điệp: "anh, không, yêu, em". Nhưng thế nào trên đường đi vấp ổ voi chữ nó lại lộn xộn và đến tay cô gái là: "không, anh, yêu, em". Mệt mỏi chưa, có 4 chữ, lộn qua lộn lại, yêu hay không yêu nói một lời. Tại thằng shipper đi không né ổ voi nên cuộc tình chúng ta ngang trái.
 
 # Chỉnh hợp chập k của n phần tử
 
@@ -39,7 +39,7 @@ Ví dụ: Lớp học có 40 bạn học sinh. Mình cần chọn 3 bạn làm l
 + Dũng làm lớp trưởng, Minh làm lớp phó học tập, Khôi là lớp phó kỷ luật.
 + Minh làm lớp trưởng, Khôi làm lớp phó học tập, Minh làm lớp phó kỷ luật.
 + Khôi làm lớp trưởng, Minh làm lớp phó học tập, Dũng làm lớp phó kỷ luật.
-+...
++ ...
 
 3 cách xếp hoàn toán khác nhau, 3 bạn ấy chỉ cần thay đổi vị trí thì sẽ tạo ra một hoán vị mới.
 
@@ -47,11 +47,14 @@ Hay cách làm khi mới học tổ hợp:
 + Số cách chọn bạn thứ nhất làm lớp trưởng là: 40.
 + Số cách chọn bạn thứ hai làm lớp phó học tập là: 39 (vì 1 bạn làm lớp trưởng rồi).
 + Số cách chọn bạn thứ ba làm lớp phó kỷ luật là: 38 (1 bạn đã làm lớp trưởng, 1 bạn đã làm lớp phó học tập)
+
 Nên số cách chọn 3 bạn trong 40 bạn đảm nhận 3 vị trí lớp trưởng, lớp phó học tập, lớp phó kỷ luật là: $$40.39.38 = 59280$$
 
 Tới đây để giải thích công thức này: $$ A_{n}^{k} = \frac{n!}{(n-k)!}$$.
+
 Ví dụ mình cần chọn 3 bạn trong 5 bạn học sinh. Thì $$ A_{5}^{3} = \frac{5!}{(5-3)!} = 60$$.
-Cách làm khi mới học tổ hợp: $$5*4*3 = 60$$
+
+Cách làm khi mới học tổ hợp: $$5.4.3 = 60$$
 
 Các bạn khai triển ra từ từ: $$A_{5}^{3} = \frac{5!}{(5-3)!} = \frac{5.4.3.2.1}{2.1}=5.4.3 $$. Tới đây đã giống với cách phía trên. Giải thích: Tức là bạn lấy hoán vị của 5 phần tử, bạn cần 2 phần tử nên bạn xem các phần tử phía sau là một (một ở đây tức là một phần tử, không phải các phần tử bằng một). Nên bạn chỉ cần chia là xong.
 
@@ -62,20 +65,28 @@ Chỉnh hợp lặp là chỉnh hợp và cho phép các phần tử được l�
 Công thức: $$n^{k}$$
 
 Ví dụ:
-Liệt kê các số có 4 chữ số từ tập $$ A = {1,2,3,4,5,6}.
+
+Liệt kê các số có 4 chữ số từ tập $$ A = {1,2,3,4,5,6}$$.
+
 Vậy nếu tính chỉnh hợp không lặp là các ký tự khác nhau đôi một: 1234,1245,1245,2635,2413,...
+
 Nếu chỉnh hợp lặp là các ký tự có thể trùng nhau như: 1542,1142,1244,1222,5555,5441,...
 
 => Chỉnh hợp lặp sẽ là cha của chỉnh hợp không lặp.
 
 Thêm một ví dụ đơn giản: 
+
 Liệt kê các số có 2 chữ số trong tập : $$B = {0,1,2,3,4,5,6,7,8,9}$$
+
 Giả sử, các bạn chưa biết tổ hợp thì số lượng các số có hai chữ số là từ $$00\rightarrow 99$$ là $$100$$ chữ số.
+
 Vậy số cách chọn chữ số đầu tiên là: $$10$$
+
 Số cách chọn chữ số thứ hai là: $$10$$
+
 Vậy số lượng các số có hai chữ số là: $$10^{2} = 100$$. Hay $$n^{k} = 10^{2} = 100$$.
 
-#Tổ hợp chập k của n phần tử
+# Tổ hợp chập k của n phần tử
 
 Tương tự như chỉnh hợp. Nhưng khác một chỗ duy nhất là không cần vị trí. Vậy tổ hợp có hai tính chất: mỗi tổ hợp phải khác nhau, nhưng không tính thứ tự.
 
@@ -85,12 +96,14 @@ Ví dụ: Lớp học có 40 bạn học sinh. Mình cần chọn 3 bạn sau gi
 + Dũng ở lại quét lớp, Minh ở lại quét lớp, Khôi ở lại quét lớp.
 + Minh ở lại quét lớp, Khôi ở lại quét lớp, Minh ở lại quét lớp.
 + Khôi ở lại quét lớp, Minh ở lại quét lớp, Dũng ở lại quét lớp.
-+...
++ ...
 
 Với 3 cách trên thì nó là như nhau. Vậy chỉ có 1 cách thôi.
 
 Giải thích công thức: $$ C_{n}^{k} = \frac{n!}{k!.(n-k)!}$$
+
 Như đã nêu phía trên, tổ hợp là chỉnh hợp nhưng không tính vị trí. Nên nếu không tính vị trí thì...ta chia cho hoán vị của chúng là xong.
+
 $$ C_{n}^{k} = \frac{n!}{k!.(n-k)!} = \frac{A_{n}^{k}}{k!}$$
 
 # Cách tính nhẩm
@@ -105,9 +118,9 @@ Cách tính rất đơn giản: với $$A_{5}^{3} = \frac{5!}{(5-3)!} = \frac{5.
 
 Ví dụ: 
 
-+ $$A_{5}^{3} = 5.4.3$$
-+ $$A_{15}^{4} = 15.14.13.12$$
-+ $$A_{10}^{2} = 10.9$$
++ $$A_{5}^{3} = 5.4.3$$.
++ $$A_{15}^{4} = 15.14.13.12$$.
++ $$A_{10}^{2} = 10.9$$.
 
 ## Tính tổ hợp
 
@@ -117,11 +130,13 @@ Mình nghĩ phép chia 1 đến 2 chữ số thì có lẽ đơn giản.
 Ví dụ:
 
 + Với $$C_{5}^{3}$$, bạn tính $$A_{5}^{3}$$ trước, sau đó chia cho $$3! = 6$$.
-+ Với $$C_{15}^{4} = 15.14.13.12$$, bạn tính $$$$A_{15}^{4}$$ trước, sau đó chia cho 4!.
-...
++ Với $$C_{15}^{4} = 15.14.13.12$$, bạn tính $$A_{15}^{4}$$ trước, sau đó chia cho 4!.
++ ...
 
 Nhìn có vẻ phép chia rối rắm, nhưng trong một số trường hợp bạn có thể tính nhanh và sử dụng khá ít phép tính.
+
 Ví dụ:
+
 + Với $$C_{7}^{3}$$, bạn tính $$A_{7}^{3}$$ và chia cho $$3! = 6$$. Bạn có thể nhận xét:  $$A_{7}^{3} = 7.6.5$$ và $$3! = 6$$, ta được:
 
 $$C_{7}^{3} = \frac{A_{7}^{3}}{3!} = \frac{7.6.5}{6} = 7.5 = 35$$
