@@ -60,7 +60,7 @@ Cách làm khi mới học tổ hợp: $$5.4.3 = 60$$
 
 Các bạn khai triển ra từ từ $$A_{5}^{3} = \frac{5!}{(5-3)!} = \frac{5.4.3.2.1}{2.1}=5.4.3 $$. Tới đây đã giống với cách phía trên. 
 
-<span class="red">Giải thích</span>: Tức là bạn lấy hoán vị của 5 phần tử, bạn cần 2 phần tử nên bạn xem các phần tử phía sau là một (một ở đây tức là một phần tử, không phải các phần tử bằng một). Nên bạn chỉ cần chia số hoán vị của các phần tử phía sau là xong.
+<span class="red">Giải thích</span>: Tức là bạn lấy hoán vị của 5 phần tử, bạn cần 3 phần tử nên bạn xem các phần tử phía sau là một (một ở đây tức là một phần tử, không phải các phần tử bằng một). Nên bạn chỉ cần chia số hoán vị của các phần tử phía sau là xong.
 
 ## Chỉnh hợp lặp
 
@@ -97,12 +97,12 @@ Tương tự như chỉnh hợp. Nhưng khác một chỗ duy nhất là không 
 $$ C_{n}^{k} = \frac{n!}{k!.(n-k)!}$$
 
 __Ví dụ__: Lớp học có 40 bạn học sinh. Mình cần chọn 3 bạn sau giờ học đi quét nhà. Vậy số cách chọn 3 bạn trong 40 bạn là $$ C_{40}^{3} = \frac{40!}{3!.(40-3)!} = 9880$$. Thế là mình gọi 3 bạn: "Dũng, Minh, Khôi". Thì:
-+ Dũng ở lại quét lớp, Minh ở lại quét lớp, Khôi ở lại quét lớp.
-+ Minh ở lại quét lớp, Khôi ở lại quét lớp, Dũng ở lại quét lớp.
-+ Khôi ở lại quét lớp, Minh ở lại quét lớp, Dũng ở lại quét lớp.
++ <span class="green">Dũng</span> ở lại quét lớp, <span class="red">Minh</span> ở lại quét lớp, <span class="yellow">Khôi</span> ở lại quét lớp.
++ <span class="red">Minh</span> ở lại quét lớp, <span class="yellow">Khôi</span> ở lại quét lớp, <span class="green">Dũng</span> ở lại quét lớp.
++ <span class="yellow">Khôi</span> ở lại quét lớp, <span class="red">Minh</span> ở lại quét lớp, <span class="green">Dũng</span> ở lại quét lớp.
 + ...
 
-Với 3 cách trên thì nó là như nhau. Vậy chỉ có 1 cách thôi.
+> Với 3 cách trên thì nó là như nhau, nói bạn nào cũng như nhau. Vậy chỉ có 1 cách thôi.
 
 <span class="red">Giải thích công thức</span>: $$ C_{n}^{k} = \frac{n!}{k!.(n-k)!}$$
 
